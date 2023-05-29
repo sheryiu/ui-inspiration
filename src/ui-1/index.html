@@ -1,0 +1,65 @@
+<html style="color-scheme: dark">
+  <head>
+    <link rel="stylesheet" href="../../dist/style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body style="--color-primary: 9 2 22; --color-secondary: 64 55 76" class="bg-primary h-full w-full relative">
+    <div class="absolute inset-0 flex flex-col">
+      <header class="shrink-0 h-8 py-0.5 px-2.5 flex items-center justify-between border-b border-secondary">
+        <div class="flex gap-4 items-center">
+          <span class="uppercase mr-1">Logo</span>
+          <span class="text-stone-200 text-sm">Button 1</span>
+          <span class="text-stone-200 text-sm">Button 2</span>
+        </div>
+      </header>
+      <div class="grow flex flex-row">
+        <nav id="nav" class="shrink-0 w-12 border-r border-secondary flex flex-col gap-0.5 relative after:absolute after:transition after:shadow-none after:top-[--glow-y] after:w-px after:-right-px after:rounded-3xl after:-translate-y-1/2 after:duration-150" onmouseenter="navMouseEnter(event)" onmousemove="navMouseMove(event)" onmouseleave="navMouseLeave(event)">
+          <button class="group w-full aspect-square relative hover:bg-white/20 transition-colors before:absolute before:h-10 before:w-1 before:bg-purple-800 before:-left-px before:top-1 before:rounded-r-sm">
+            <span class="material-symbols-outlined">
+              key
+            </span>
+          </button>
+          <button class="group w-full aspect-square relative hover:bg-white/20 transition-colors">
+            <span class="material-symbols-outlined group-hover:text-white/100 text-white/70 transition-colors">
+              person
+            </span>
+          </button>
+          <button class="group w-full aspect-square relative hover:bg-white/20 transition-colors">
+            <span class="material-symbols-outlined group-hover:text-white/100 text-white/70 transition-colors">
+              map
+            </span>
+          </button>
+        </nav>
+
+        <section class="basis-1/4 m-5 mr-0">
+          <div class="h-full border border-secondary bg-white/5 flex flex-col">
+            <header class="shrink-0 h-8 uppercase font-medium px-2 flex items-center text-purple-300">Users</header>
+            <div id="userList" class="flex flex-col relative after:absolute after:transition after:shadow-none after:top-[--glow-y] after:w-px after:-right-px after:rounded-3xl after:-translate-y-1/2 after:duration-150" onmouseenter="userListMouseEnter(event)" onmousemove="userListMouseMove(event)" onmouseleave="userListMouseLeave(event)">
+              <div class="transition-colors border-t border-secondary/70 hover:bg-white/20 px-2 py-1 leading-tight">Et velit incididunt Lorem laboris sint quis sit amet enim voluptate laboris non anim.</div>
+              <div class="transition-colors border-t border-secondary/70 hover:bg-white/20 px-2 py-1 leading-tight">Irure cillum adipisicing ut ut nulla ex consequat voluptate veniam labore deserunt mollit incididunt eu.</div>
+              <div class="transition-colors border-t border-secondary/70 hover:bg-white/20 px-2 py-1 leading-tight">In adipisicing mollit cupidatat voluptate commodo amet.</div>
+              <div class="transition-colors border-t border-secondary/70 hover:bg-white/20 px-2 py-1 leading-tight">Proident fugiat id qui cillum amet ex veniam.</div>
+              <div class="transition-colors border-t border-secondary/70 hover:bg-white/20 px-2 py-1 leading-tight">Duis ut exercitation dolore velit ex tempor.</div>
+              <div class="relative transition-colors border-t border-secondary/70 hover:bg-white/20 px-2 py-1 leading-tight before:absolute before:h-10 before:w-1 before:bg-purple-800 before:-left-px before:top-1/2 before:-translate-y-1/2 before:rounded-r-sm">Magna consectetur proident voluptate sint cupidatat occaecat id amet eiusmod in.</div>
+              <div class="transition-colors border-t border-secondary/70 hover:bg-white/20 px-2 py-1 leading-tight">Fugiat sunt dolor sint dolor pariatur aute ea ut consequat sunt magna cupidatat.</div>
+              <div class="transition-colors border-t border-secondary/70 hover:bg-white/20 px-2 py-1 leading-tight">Laborum ex esse ad eiusmod esse dolore veniam deserunt magna mollit pariatur elit proident.</div>
+              <div class="transition-colors border-t border-secondary/70 hover:bg-white/20 px-2 py-1 leading-tight">Minim quis quis ut Lorem ullamco ea do Lorem dolor dolor commodo.</div>
+              <div class="transition-colors border-t border-secondary/70 hover:bg-white/20 px-2 py-1 leading-tight">Nisi anim exercitation reprehenderit nisi Lorem elit elit adipisicing exercitation minim consectetur consequat ipsum.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grow m-5">
+          <div class="h-full border border-secondary bg-white/5">
+            <div class="max-w-lg mx-auto flex flex-col pt-10">
+              <h1 class="text-5xl font-light text-purple-300 mb-4 uppercase">User</h1>
+              <h2 class="text-3xl">Magna consectetur proident voluptate sint cupidatat occaecat id amet eiusmod in.</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+
+</html>
